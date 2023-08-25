@@ -24,7 +24,7 @@ const Contact = () => {
       .then(
         () => {
           alert('Message successfully sent!')
-          window.location.reload(false)
+          // window.location.reload(false)
         },
         () => {
           alert('Failed to send the message, please try again')
@@ -44,7 +44,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
+            I am interested in full-time roles and freelance opportunities - especially on ambitious
             or large projects. However, if you have any other requests or
             questions, don't hesitate to contact me using below form either.
           </p>
@@ -97,7 +97,7 @@ const Contact = () => {
           <MapContainer center={[28.535517, 77.391029]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[28.535517, 77.391029]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+              <Popup>Home! : )</Popup>
             </Marker>
           </MapContainer>
         </div>

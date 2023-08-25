@@ -1,12 +1,15 @@
 import './index.scss'
+import React, { useState } from "react";
 import { Link, NavLink } from 'react-router-dom'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo-sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faHeart, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faInstagram, faLinkedin, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons'
+
 
 const Sidebar = () => {
+
     return (
         <div className='nav-bar'>
             <Link className='logo' to='/'>
@@ -38,20 +41,23 @@ const Sidebar = () => {
     <a 
     target="_blank" 
     rel="noreferrer" 
-    href="https://www.linkedin.com/in/subhanjalisharma/"
+    href="https://github.com/subhanjalis"
     >
 <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
 </a>
     </li>
     <li>
+    <a >
+    
     <a 
     target="_blank" 
     rel="noreferrer" 
     href="https://www.linkedin.com/in/subhanjalisharma/"
     >
-<FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+<FontAwesomeIcon icon={faHeart} color="#4d4d4e" />
 </a>
-    </li>
+</a>
+    </li> 
 </ul>
         </div>
     )

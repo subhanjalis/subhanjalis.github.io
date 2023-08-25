@@ -79,3 +79,23 @@
     transform: rotateX(90deg);
   }
 }
+
+.flat-button {
+  color: #df678c;
+  margin-top: 20px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #df678c;
+  margin-top: 25px;
+  float: left;
+  animation: fadeIn 1s 1.8s backwards;
+  white-space: nowrap;
+
+  &:hover {
+    background: #df678c;
+    color: #333;
+  }
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Cat } from "react-kawaii";
 import styled from "styled-components";
 import { styler, tween, merge, action, easing } from "popmotion";
+import Heart from "react-animated-heart";
 
 const Container = styled.div`
   position: absolute;
@@ -18,8 +19,8 @@ const Container = styled.div`
     height: auto;
   }
 `;
-
 class KawaiiAnimation extends Component {
+  
   constructor(props) {
     super(props);
 
@@ -132,8 +133,11 @@ class KawaiiAnimation extends Component {
   }
 
   render() {
+    
+
     return (
       <Container ref={this.catRef}>
+        {/* <Heart className="heart" isClick={isClick} onClick={() => setClick(!isClick)} /> */}
         <Cat color="#9400D3" mood="blissful" />
       </Container>
     );
